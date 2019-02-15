@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<html>
+
+<head>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <title>Testing directory</title>
+  <style>
+    h1{
+      font-family: verdana , sans-serif;
+    }
+  </style>
+</head>
+
+<!--Nav Bar-->
+<div id="nav-placeholder">
+
+</div>
+
+<script>
+$(function(){
+  $("#nav-placeholder").load("nav.html");
+});
+</script>
+<!--/Nav Bar-->
+
+<h1>Home</h1>
+
+<img src="https://i.redd.it/aoh4z6fwold21.png" alt="beeg beeg yoshi" border="5" border-color="5" onmouseover="bigImg(this)" onmouseout="normalImg(this)" height="100px" width="100px">
+
+<script>
+function bigImg(x) {
+  x.style.height = "500px";
+  x.style.width = "500px";
+}
+function normalImg(x) {
+  x.style.height = "100px";
+  x.style.width = "100px";
+}
+</script>
+
+
+</html>
