@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Testing for Invalid Data</title>
+  </head>
+  <style media="screen">
+    input:invalid {
+      background-color: red;
+    }
+
+    input:valid {
+      background-color: lightgreen;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery.js"></script>
+
+  <!--Nav Bar-->
+  <div id="nav-placeholder">
+
+  </div>
+
+  <script>
+  $(function(){
+    $("#nav-placeholder").load("nav.html");
+  });
+  </script>
+  <!--End Nav Bar-->
+  
+  <body>
+    <h1>Testing for invalid data</h1>
+    <fieldset>
+      <legend>You must be over 18 to participate</legend>
+    <label>
+      Age:
+      <input type="number" name="age" min="18">
+    </label>
+    </fieldset>
+  </body>
+</html>

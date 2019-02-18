@@ -1,65 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Positioning Test</title>
-  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <title>Position Test</title>
   <style>
     header {
       background-color: red;
       margin: 0px;
       padding: 10px;
       height: 25px;
-      width: 100%;
+      width: 97.85%;
     }
     nav {
       background-color: blue;
       margin: 0px;
       padding: 10px;
       height: 125px;
-      width: 100%;
+      width: 20%;
+      float: left;
     }
     section {
       background-color: green;
       margin: 0px;
       padding: 10px;
       height: 125px;
-      width: 200px;
-      poition: absolute;
-      top: 46px;
-      left: 201px;
+      width: 55%;
+      float: left;
     }
     aside {
       background-color: yellow;
       margin: 0px;
       padding: 10px;
       height: 125px;
-      width: 200px;
-      poition: absolute;
-      top: 46px;
-      left: 402px;
+      width: 20%;
+      float: left;
     }
     footer {
+      clear: both;
       background-color: orange;
       margin: 0px;
       padding: 10px;
       height: 25px;
-      width: 600px
-      poition: absolute;
-      top: 192px;
-      left: 0px;
+      width: 97.85%;
     }
     </style>
   </head>
 <body>
   <header><p>This is the header</p></header>
+  <div id="container">
   <nav>
     <p>Navigation</p>
-    <ul>
-      <li><a href="home.html">Home</a></li>
-    </ul>
+    <p><a href="home.html">Home<a></p>
   </nav>
   <section><p>Section</p></section>
   <aside><p>Aside</p></aside>
+  </div>
   <footer><p>This is the footer</p></footer>
 </body>
 </html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Image Rotation Test</title>
+    <style media="screen">
+      #img1 {
+        position: absolute;
+        top: 300px;
+        left: 100px;
+        transform: rotate(30deg);
+        box-shadow: black 10px 5px 15px;
+        border: 0px;
+      }
+
+      #img2 {
+        position: absolute;
+        top: 300px;
+        left: 1000px;
+        transform: rotate(-30deg);
+        box-shadow: black 10px 5px 15px;
+        border: 0px;
+      }
+    </style>
+    <link rel="stylesheet" type="text/css" href="basestyle.css">
+  </head>
+  <script src="https://code.jquery.com/jquery.js"></script>
+
+  <!--Nav Bar-->
+  <div id="nav-placeholder">
+
+  </div>
+
+  <script>
+  $(function(){
+    $("#nav-placeholder").load("nav.html");
+  });
+  </script>
+  <!--End Nav Bar-->
+  <body>
+    <header>
+    <h1>My vacation photos</h1>
+    </header>
+    <section>
+      <a href="home.html">
+      <img id="img1" src="https://i.redd.it/aoh4z6fwold21.png" width="250" height="250">
+      </a>
+      <a href="home.html">
+      <img id="img2" src="https://i.redd.it/aoh4z6fwold21.png" width="250" height="250">
+      </a>
+    </section>
+  </body>
+</html>
