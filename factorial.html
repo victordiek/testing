@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Factorial</title>
+
+    <!--Nav Bar-->
+    <script src=jquery-3.3.1.min.js></script>
+
+    <div id="nav-placeholder">
+
+    </div>
+
+    <script>
+    $(function(){
+      $("#nav-placeholder").load("nav.html");
+    });
+    </script>
+    <!--End Nav Bar-->
+
+  </head>
+  <body>
+    <script type="text/javascript">
+      var number = prompt("Please enter a number:")
+    </script>
+    <script type="text/javascript">
+      var factorial = 1;
+      for (counter = 1; counter <= number; counter++) {
+        factorial = factorial * counter;
+      }
+      alert("The factorial of " + number + " is " + factorial)
+    </script>
+  </body>
+</html>

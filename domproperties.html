@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>DOM Properties</title>
+
+    <!--Nav Bar-->
+    <script src=jquery-3.3.1.min.js></script>
+
+    <div id="nav-placeholder">
+
+    </div>
+
+    <script>
+    $(function(){
+      $("#nav-placeholder").load("nav.html");
+    });
+    </script>
+    <!--End Nav Bar-->
+  </head>
+  <body>
+    <h1>Heading</h1>
+    <p>sample text</p>
+    <br>
+    <button type="button" onclick="changeme('red')">Change background to red</button>
+    <button type="button" onclick="changeme('white')">Change background to white</button>
+    <script type="text/javascript">
+      function changeme(color) {
+        document.body.style.backgroundColor = color;
+      }
+    </script>
+  </body>
+</html>

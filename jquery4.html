@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Testing jQuery</title>
+
+    <!--Nav Bar-->
+    <script src=jquery-3.3.1.min.js></script>
+
+    <div id="nav-placeholder">
+
+    </div>
+
+    <script>
+    $(function(){
+      $("#nav-placeholder").load("nav.html");
+    });
+    </script>
+    <!--End Nav Bar-->
+    <style>
+      div {
+        background-color: yellow;
+      }
+    </style>
+    <script>
+      jQuery(document).ready(function() {
+        $("button").click(function() {
+          $("p").css("background-color", "red");
+          $("p").css("font-size", "50px");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="container">
+      <h1>Heading 1</h1>
+      <p>Web page content</p>
+      <button>Test button</button>
+    </div>
+  </body>
+</html>

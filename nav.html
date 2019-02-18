@@ -1,8 +1,9 @@
 <!--
   Copy this--
-  <script src="https://code.jquery.com/jquery.js"></script>
 
   <!--Nav Bar->
+  <script src=jquery-3.3.1.min.js></script>
+
   <div id="nav-placeholder">
 
   </div>
@@ -12,19 +13,42 @@
     $("#nav-placeholder").load("nav.html");
   });
   </script>
-  <!--End Nav Bar->
--->
+  <!--End Nav Bar-->
 
 <link rel="stylesheet" type="text/css" href="navstyle.css">
 
 <nav>
-  <ul>
-    <li><a href="home.html">Home</a></li>
-    <li><a href="colortest.html">ColorTest</a></li>
-    <li><a href="positiontest.html">PositionTest</a></li>
-    <li><a href="table.html">Table</a></li>
-    <li><a href="inputtypetest.html">InputTest</a></li>
-    <li><a href="invaliddatatest.html">InvDataTest</a></li>
-    <li><a href="imagetest.html">ImageTest</a></li>
+  <ul class="ul">
+    <li class="li" style="background-color: #008e00"><a href="home.html">Home</a></li>
+
+    <li style="background-color: #505050" class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">Book 2</a>
+      <div class="dropdown-content">
+        <a href="table.html">Table</a>
+        <a href="colortest.html">Color</a>
+        <a href="positiontest.html">Position</a>
+        <a href="inputtypetest.html">Input</a>
+        <a href="invaliddatatest.html">Invalid Data</a>
+        <a href="imagetest.html">Images</a>
+      </div>
+    </li>
+
+    <li style="background-color: #505050" class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">Book 3</a>
+      <div class="dropdown-content">
+        <a class="li" href="scriptheadtest.html">Script(Head)</a>
+        <a class="li" href="scriptbodytest.html">Script(Body)</a>
+        <a class="li" href="switchtest.html">Switch</a>
+        <a class="li" href="factorial.html">Factorial</a>
+        <a class="li" href="domtest.html">DOM</a>
+        <a class="li" href="domproperties.html">DOM Properties</a>
+        <a class="li" href="findtest.html">DOM Find</a>
+        <a class="li" href="walkingtest.html">DOM Walking</a>
+      </div>
+    </li>
+
+    <li><a class="li" href="jquery1.html">jQuery1</a></li>
+    <li><a class="li" href="jquery2.html">jQuery2</a></li>
+    <li><a class="li" href="jquery4.html">jQuery4</a></li>
   </ul>
 </nav>

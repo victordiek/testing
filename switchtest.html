@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Switch Statement</title>
+
+    <!--Nav Bar-->
+    <script src=jquery-3.3.1.min.js></script>
+
+    <div id="nav-placeholder">
+
+    </div>
+
+    <script>
+    $(function(){
+      $("#nav-placeholder").load("nav.html");
+    });
+    </script>
+    <!--End Nav Bar-->
+
+    <script type="text/javascript">
+      var age = prompt("How old are you?");
+    </script>
+  </head>
+
+  <body>
+    <script type="text/javascript">
+      switch (true) {
+        case (age < 18):
+          alert("Sorry, you are too young to play");
+          break;
+        case (age < 50):
+          alert("Welcome to the game!");
+          break;
+        case (age >= 50):
+          alert("Sorry, you are too old to play");
+      }
+    </script>
+  </body>
+</html>
