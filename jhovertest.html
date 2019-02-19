@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Testing Mouse Events</title>
+
+    <!--Nav Bar-->
+    <script src=jquery-3.3.1.min.js></script>
+
+    <div id="nav-placeholder">
+
+    </div>
+
+    <script>
+    $(function(){
+      $("#nav-placeholder").load("nav.html");
+    });
+    </script>
+    <!--End Nav Bar-->
+    <style media="screen">
+      .yellow {
+        background-color: yellow;
+        width: 400px;
+      }
+      .red {
+        background-color:red;
+        width: 400px;
+      }
+    </style>
+    <script>
+      jQuery(document).ready( function() {
+        $("p").hover( function() {
+          $(this).addClass("red"); },
+        function() {
+          $(this).removeClass("red"); });
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Mouse event test</h1>
+    <p class="yellow">Page Content</p>
+    <p>Page content 2</p>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>jQuery Keystroke test</title>
+
+    <!--Nav Bar-->
+    <script src=jquery-3.3.1.min.js></script>
+
+    <div id="nav-placeholder">
+
+    </div>
+
+    <script>
+    $(function(){
+      $("#nav-placeholder").load("nav.html");
+    });
+    </script>
+    <!--End Nav Bar-->
+    <script>
+      jQuery(document).ready( function() {
+        $("textarea").on("keyup", function() {
+          var count = $(this).val().length;
+          var output = "Character count: " + count;
+          $("#status").text(output);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Testing for keystrokes</h1>
+    <p>Enter text</p>
+    <textarea rows="20" cols="50"></textarea>
+    <p id="status"></p>
+  </body>
+</html>

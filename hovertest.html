@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Hover test</title>
+
+    <!--Nav Bar-->
+    <script src=jquery-3.3.1.min.js></script>
+
+    <div id="nav-placeholder">
+
+    </div>
+
+    <script>
+    $(function(){
+      $("#nav-placeholder").load("nav.html");
+    });
+    </script>
+    <!--End Nav Bar-->
+    <style media="screen">
+      #test {
+        background-color: yellow;
+        width: 400px;
+      }
+    </style>
+    <script>
+      function changeit(state) {
+        if (state == "in") {
+          document.getElementById("test").style.backgroundColor="red";
+        } else if (state == "out") {
+          document.getElementById("test").style.backgroundColor="yellow";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Mouse events</h1>
+    <p id="test" onmouseover="changeit('in')" onmouseout="changeit('out')">Content</p>
+  </body>
+</html>
