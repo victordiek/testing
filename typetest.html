@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Data Type Test</title>
+    <style media="screen">
+      input {
+        margin: 5px;
+      }
+    </style>
+
+    <!--Nav Bar-->
+    <script src=jquery-3.3.1.min.js></script>
+
+    <div id="nav-placeholder">
+
+    </div>
+
+    <script>
+    $(function(){
+      $("#nav-placeholder").load("nav.html");
+    });
+    </script>
+    <!--End Nav Bar-->
+  </head>
+  <body>
+    <h1>Please enter data into the form fields</h1>
+    <form action="typetest.php" method="post">
+      <label>Last Name</label>
+      <input type="text" name="name"><br>
+      <label>Email address</label>
+      <input type="text" name="email"><br>
+      <label>Age</label>
+      <input type="text" name="age"><br>
+      <input type="submit" value="Submit form">
+    </form>
+  </body>
+</html>

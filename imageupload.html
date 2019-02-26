@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Image Upload</title>
+    <style media="screen">
+      input {
+        margin: 5px;
+      }
+    </style>
+
+    <!--Nav Bar-->
+    <script src=jquery-3.3.1.min.js></script>
+
+    <div id="nav-placeholder">
+
+    </div>
+
+    <script>
+    $(function(){
+      $("#nav-placeholder").load("nav.html");
+    });
+    </script>
+    <!--End Nav Bar-->
+  </head>
+  <body>
+    <h2>Select an image to upload</h2>
+    <form action="imageconvert.php" method="post" enctype="multipart/form-data">
+      <input type="file" name="picture"><br>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
