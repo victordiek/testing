@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>PHP Form Test</title>
+    <style media="screen">
+      input, textarea {
+        margin: 5px;
+      }
+    </style>
+
+    <!--Nav Bar-->
+    <script src=jquery-3.3.1.min.js></script>
+
+    <div id="nav-placeholder">
+
+    </div>
+
+    <script>
+    $(function(){
+      $("#nav-placeholder").load("nav.html");
+    });
+    </script>
+    <!--End Nav Bar-->
+  </head>
+  <body>
+      <h1>Please fill in the form</h1>
+      <form action="formtest.php" method="post">
+        <fieldset>
+          <legend>Test form</legend>
+          <label>First name</label>
+          <input type="text" name="fname"><br>
+          <label>Last name</label>
+          <input type="text" name="lname"><br>
+          <fieldset>
+            <legend>Select your favorite sport</legend>
+            <input type="radio" name="sport" value="baseball">Baseball<br>
+            <input type="radio" name="sport" value="football">Football<br>
+            <input type="radio" name="sport" value="hocket">Hockey<br>
+            <input type="radio" name="sport" value="soccer">Soccer<br>
+          </fieldset>
+          <label>Please type your essay</label>
+          <textarea name="essay" rows="10" cols="50"></textarea><br>
+          <input type="submit" value="Submit your form">
+        </fieldset>
+  </body>
+</html>
